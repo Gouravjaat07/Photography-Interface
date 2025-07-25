@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_box {
+    height: 100vh;
+    width: 100%;
+    background-image: url(mini\ project\ photo.jpg);
+    background-size: cover;
+    
+}
+
+.main_box input {
+    display: none;
+}
+
+
+.main_box .btn_one {
+    color: white;
+    font-weight: 700;
+    line-height: 25px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+
+.main_box .btn_one i {
+    line-height: 30px;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,.1);
+    transition: all .3s linear 0s;
+}
+
+.sidebar_menu .logo a {
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-weight: 700;
+    font-family: "Menbere", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+    top: 32px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(255,255,255,0.1);
+}
+
+
+.sidebar_menu .btn_two i {
+    color: grey;
+    font-size: 28px;
+    position: absolute;
+    top: 38px;
+    left: 260px;
+    cursor: pointer;
+}
+
+
+.menu {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Menbere", sans-serif;
+}
+
+.menu ul li {
+    color: white;
+    padding: 10px;
+    margin-left:10px;
+    list-style-type: none;
+
+
+}
+
+
+.menu ul li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.social_media{
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    padding: 5px;
+}
+
+.social_media ul i {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.social_media ul i:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.menu ul li:hover {
+    border: 2px solid white;
+    border-radius: 8px;
+    opacity: 0.7;
+    box-shadow: 1px 1px 5px rgba(255,255,255,0.5);
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+.sidebar_menu .logo a:hover {
+    box-shadow: 3px 3px 15px rgba(255,255,255,0.1);
+}
+
